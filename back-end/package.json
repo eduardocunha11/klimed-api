@@ -1,0 +1,50 @@
+{
+	"name": "lab-eng-sw-tp2-clinica-back-end",
+	"version": "1.0.0",
+	"description": "Servidor da aplicação da clínica médica.",
+	"main": "index.js",
+	"type": "module",
+	"engines": {
+		"node": "14.x"
+	},
+	"scripts": {
+		"start": "node index.js",
+		"test": "echo \"Error: no test specified \" && exit 1",
+		"dev": "nodemon",
+		"vercel-build": "sequelize-cli db:migrate && sequelize-cli db:seed:all",
+		"db_create": "sequelize-cli db:create && sequelize-cli db:migrate && sequelize-cli db:seed:all",
+		"db_drop": "sequelize-cli db:drop",
+		"db_migrate": "sequelize-cli db:migrate",
+		"db_seeds": "sequelize-cli db:seed:all",
+		"db_seed": "sequelize-cli db:seed --seed"
+	},
+	"author": "Lucas Rassilan Vilanova",
+	"license": "ISC",
+	"repository": {
+		"url": "https://github.com/Lucasrsv1/lab-eng-sw-tp2-clinica"
+	},
+	"dependencies": {
+		"console-stamp": "^3.0.3",
+		"cors": "^2.8.5",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1",
+		"express-validator": "^6.13.0",
+		"js-sha512": "^0.8.0",
+		"jsonwebtoken": "^8.5.1",
+		"morgan": "^1.10.0",
+		"pg": "^8.7.1",
+		"sequelize": "^6.9.0"
+	},
+	"devDependencies": {
+		"eslint": "^8.1.0",
+		"nodemon": "^2.0.14",
+		"sequelize-cli": "^6.3.0"
+	},
+	"nodemonConfig": {
+		"ignore": [
+			".git",
+			"node_modules/",
+			"public/"
+		]
+	}
+}
