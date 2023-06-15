@@ -3,7 +3,6 @@
 	"version": "1.0.0",
 	"description": "Servidor da aplicação da clínica médica.",
 	"main": "index.js",
-	"type": "module",
 	"engines": {
 		"node": "18.x"
 	},
