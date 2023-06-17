@@ -30,7 +30,7 @@ app.use("/api", routes);
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-	return res.json("hello world!");
+	console.log("hello world!");
 });
 
 // Manda todos as outras requisições para o index.html
