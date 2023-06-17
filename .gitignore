@@ -2,7 +2,6 @@
 
 # compiled output
 dist
-back-end/public/*
 tmp
 out-tsc
 # Only exists if Bazel was run
