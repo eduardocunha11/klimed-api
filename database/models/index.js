@@ -1,6 +1,3 @@
-import * as pg from 'pg';
-import { Sequelize } from 'sequelize';
-
 const Sequelize = require("sequelize");
 
 const configs = require("../config/config");
