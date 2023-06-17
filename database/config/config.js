@@ -25,12 +25,6 @@ module.exports = {
 		dialect: "postgres",
 		protocol: "postgres",
 		ssl: true,
-		dialectModule : "tedious",
-		dialectOptions: {
-		    ssl: true,
-			require: true,
-			native: true		  
-		},
 		logging: false,
 		pool: { max: 20, min: 0 }
 	}
