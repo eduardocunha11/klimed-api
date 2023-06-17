@@ -1,3 +1,4 @@
+const pg = require("pg");
 const Sequelize = require("sequelize");
 
 const configs = require("../config/config");
@@ -26,11 +27,16 @@ sequelize = new Sequelize(process.env.DATABASE_URL, {
 	dialect: 'postgres',
 	protocol: 'postgres',
 	ssl: true,
+	dialectModule: pg,
 	dialectOptions: {
 	  	ssl: true, 
 		require: true
-	}
+	},
+	logging: false,
+	pool: { max: 20, min: 0 }
   });
+
+  
 
 /*sequelize = new Sequelize(config.database, config.username, config.password, {
 	host: config.host,
