@@ -24,7 +24,6 @@ module.exports = {
 		host: "ep-holy-unit-576309.us-east-2.aws.neon.tech",
 		dialect: "postgres",
 		protocol: "postgres",
-		ssl: true,
 		dialectModule : "tedious",
 		dialectOptions: {
 		    ssl: true,
