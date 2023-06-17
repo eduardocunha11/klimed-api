@@ -10,6 +10,8 @@ const initPessoa = require("./pessoas");
 
 const env = process.env.NODE_ENV || "development";
 const config = configs[env];
+const pg = require('pg');
+
 
 /**
  * @type {Sequelize}
