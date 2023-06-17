@@ -1,3 +1,6 @@
+import * as pg from 'pg';
+import { Sequelize } from 'sequelize';
+
 const Sequelize = require("sequelize");
 
 const configs = require("../config/config");
@@ -21,7 +24,11 @@ let sequelize;
 else
 	sequelize = new Sequelize(config.database, config.username, config.password, config);*/
 
-sequelize = new Sequelize(config.database, config.username, config.password, config);
+// sequelize = new Sequelize(config.database, config.username, config.password, config);
+ 
+sequelize = new Sequelize('postgres://eduardocunha11:UV3GDNFi1BdZ@ep-holy-unit-576309.us-east-2.aws.neon.tech/neondb', {
+  dialectModule: pg
+});
 
 const db = {
 	sequelize,
