@@ -25,8 +25,7 @@ else
 	sequelize = new Sequelize(config.database, config.username, config.password, config);
 */
 
-sequelize = new Sequelize('postgres://eduardocunha11:UV3GDNFi1BdZ@ep-royal-sunset-898775.us-east-2.aws.neon.tech/neondb');
-
+sequelize = new Sequelize(config.database, config.username, config.password, config);
 
 const db = {
 	sequelize,
