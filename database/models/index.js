@@ -10,8 +10,6 @@ const initPessoa = require("./pessoas");
 
 const env = process.env.NODE_ENV || "development";
 const config = configs[env];
-const pg = require('pg');
-
 
 /**
  * @type {Sequelize}
@@ -24,11 +22,9 @@ else
 	sequelize = new Sequelize(config.database, config.username, config.password, config);*/
 
 // sequelize = new Sequelize(config.database, config.username, config.password, config);
- 
-sequelize = new Sequelize('postgres://eduardocunha11:UV3GDNFi1BdZ@ep-holy-unit-576309.us-east-2.aws.neon.tech/neondb', {
-  dialectModule: pg
-});
 
+sequelize = new Sequelize(process.env[config.use_env_variable], config);
+ 
 const db = {
 	sequelize,
 	Sequelize,
