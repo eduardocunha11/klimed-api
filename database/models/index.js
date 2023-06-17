@@ -1,5 +1,5 @@
 
-const { Sequelize } = require('@sequelize/core');
+const { Sequelize } = require("sequelize");
 
 //const Sequelize = require("sequelize");
 
