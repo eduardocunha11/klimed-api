@@ -22,11 +22,12 @@ module.exports = {
 		password: "UV3GDNFi1BdZ",
 		database: "neondb",
 		host: "ep-holy-unit-576309.us-east-2.aws.neon.tech",
-		dialect: 'postgres',
-		protocol: 'postgres',
+		dialect: "postgres",
+		protocol: "postgres",
 		ssl: process.env.DB_ENABLE_SSL,
+		dialectModule : "tedious",
 		dialectOptions: {
-		  ssl: process.env.DB_ENABLE_SSL && {
+		    ssl: process.env.DB_ENABLE_SSL && {
 			require: true
 		  }
 		},
