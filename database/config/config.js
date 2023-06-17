@@ -24,7 +24,6 @@ module.exports = {
 		host: "ep-holy-unit-576309.us-east-2.aws.neon.tech",
 		dialect: "postgres",
 		protocol: "postgres",
-		dialectModule : 'tedious',
 		logging: false,
 		pool: { max: 20, min: 0 }
 	}

@@ -1,7 +1,4 @@
-
-const { Sequelize } = require("sequelize");
-
-//const Sequelize = require("sequelize");
+const Sequelize = require("sequelize");
 
 const configs = require("../config/config");
 const initAgendamento = require("./agendamentos");
@@ -25,7 +22,28 @@ else
 	sequelize = new Sequelize(config.database, config.username, config.password, config);
 */
 
-sequelize = new Sequelize(config.database, config.username, config.password, config);
+sequelize = new Sequelize(process.env.DATABASE_URL, {
+	dialect: 'postgres',
+	protocol: 'postgres',
+	ssl: true,
+	dialectOptions: {
+	  	ssl: true, 
+		require: true
+	}
+  });
+
+/*sequelize = new Sequelize(config.database, config.username, config.password, {
+	host: config.host,
+	dialect: 'postgres',
+	dialectOptions: {
+		ssl: {
+		  require: 'true'
+		}
+	},
+	logging: false,
+	pool: { max: 20, min: 0 }
+  });*/
+
 
 const db = {
 	sequelize,

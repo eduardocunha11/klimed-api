@@ -29,10 +29,6 @@ app.use("/api", routes);
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/", (req, res) => {
-	console.log("hello world!");
-});
-
 // Manda todos as outras requisições para o index.html
 app.get("/*", (req, res) => {
 	res.sendFile(path.join(__dirname, "public", "index.html"));
