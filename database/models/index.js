@@ -44,7 +44,7 @@ db.Pessoa.associate(db);
 
 // Testa a conexão com o banco de dados
 db.sequelize.authenticate()
-	.then(_ => Window.alert("Database connected."))
-	.catch(Window.alert("Erro ao tentar conectar: " + console.error));
+	.then(_ => console.log("Database connected."))
+	.catch(console.log(console.error));
 
 module.exports = db;
