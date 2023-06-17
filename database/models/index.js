@@ -1,4 +1,7 @@
-const Sequelize = require("sequelize");
+
+const { Sequelize } = require('@sequelize/core');
+
+//const Sequelize = require("sequelize");
 
 const configs = require("../config/config");
 const initAgendamento = require("./agendamentos");
@@ -16,12 +19,15 @@ const config = configs[env];
  */
 let sequelize;
 
-if (config.use_env_variable)
+/*if (config.use_env_variable)
 	sequelize = new Sequelize(process.env[config.use_env_variable], config);
 else
 	sequelize = new Sequelize(config.database, config.username, config.password, config);
+*/
 
- 
+sequelize = new Sequelize('postgres://eduardocunha11:UV3GDNFi1BdZ@ep-royal-sunset-898775.us-east-2.aws.neon.tech/neondb');
+
+
 const db = {
 	sequelize,
 	Sequelize,
