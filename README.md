@@ -18,8 +18,4 @@ Mail: eduardocunha11@gmail.com / edu@cefetmg.br / WhatsApp: (34) 99142-1521
 
 ## Sponsor this project
 
-![GitHub Sponsor](https://img.shields.io/github/sponsors/<eduardocunha11>?label=Sponsor&logo=GitHub)
-
-## Sponsor this project
-
-![GitHub Sponsor](https://img.shields.io/github/sponsors/<eduardocunha11>?label=Sponsor&logo=GitHub)
+![GitHub Sponsor](https://img.shields.io/github/sponsors/eduardocunha11?label=Sponsor&logo=GitHub)
