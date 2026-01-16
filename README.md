@@ -1,4 +1,4 @@
-## Klimed - Medical Clinic Management System
+## Klimed - Medical Clinic Management System 
 This project was generated with Angular CLI version 12.2.10.
 
 ## About
@@ -14,7 +14,7 @@ https://klimed-api.vercel.app/home
 https://www.youtube.com/watch?v=KsGnf37hIko&t=2s
 
 ## Contact us
-Mail: eduardocunha11@gmail.com / edu@cefetmg.br / WhatsApp: (34) 99142-1521
+Mail: eduardocunha11@gmail.com / edu@cefetmg.br / WhatsApp (Brazil): +55 (34) 99142-1521 
 
 ## Sponsor this project
 
